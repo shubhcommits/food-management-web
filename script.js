@@ -1,5 +1,4 @@
 'use strict';
-
 let map,mapEvent;
 class App{
     constructor(){
@@ -29,18 +28,24 @@ class App{
         
             this.map.on('click',function(mapEv){
                 this.mapEvent=mapEv;
-                form.classList.remove('hidden');
+                // form.classList.remove('hidden');
                 inputDistance.focus();
             });
         }
-    _showForm(){}
+    // _showForm(){}
 
 }
 const app=new App();
-form.addEventListener('submit',function(e){
-    e.preventDefault();
-        L.marker([lat,lng]).addTo(map)
-    .bindPopup()
-    .setPopupContent('Workout')
-    .openPopup()
-})
+// form.addEventListener('submit',function(e){
+    // e.preventDefault();
+        // L.marker([latitude,longitude]).addTo(map)
+    // .bindPopup()
+// })
+
+// document.getElementById('.btn').addEventListener('click', function() {
+//     var donateFoodDiv = document.createElement('div');
+
+//     donateFoodDiv.innerHTML = '<p>Donate Food</p>';
+
+//     document.body.appendChild(donateFoodDiv);
+//   });

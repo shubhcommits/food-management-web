@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+    background-color: #96EFFF
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.profile-container, .donation-container {
+    width: 500px;
+    margin: 0px auto;
+    
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

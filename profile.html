@@ -1,71 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
-
 <body>
+    <header>
+        <h1>Profile</h1>
+    </header>
 
-    <div class="profile-container">
-        <header class="profile-header">
-            <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
-            <div class="profile-info">
-                <h1 class="profile-name">John Doe</h1>
-                <p class="profile-title">Web Developer</p>
-                <p class="profile-location">City, Country</p>
-            </div>
-        </header>
+    <main>
+        <div class="profile-container">
+            <h2>Basic Profile Information</h2>
+            <form id="profile-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-        <section class="profile-bio">
-            <h2>About Me</h2>
-            <p>
-                I am a passionate web developer with a focus on creating meaningful and user-friendly applications.
-                Currently pursuing innovative solutions to real-world problems.
-            </p>
-        </section>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
 
-        <section class="profile-skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-            </ul>
-        </section>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
 
-        <section class="profile-education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>University of Coding</h3>
-                <p>Degree in Computer Science</p>
-                <p>Graduated: May 2020</p>
-            </div>
-        </section>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-        <section class="profile-projects">
-            <h2>Projects</h2>
-            <div class="project-item">
-                <h3>Portfolio Website</h3>
-                <p>Developed a personal portfolio website to showcase my skills and projects.</p>
-            </div>
-            <div class="project-item">
-                <h3>Task Management App</h3>
-                <p>Created a web application for managing tasks and deadlines.</p>
-            </div>
-        </section>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
 
-        <section class="profile-social">
-            <h2>Connect with Me</h2>
-            <a href="https://twitter.com/example" target="_blank" class="social-link">Twitter</a>
-            <a href="https://linkedin.com/in/example" target="_blank" class="social-link">LinkedIn</a>
-            <a href="https://github.com/example" target="_blank" class="social-link">GitHub</a>
-        </section>
-    </div>
+        <div class="donation-container">
+            <h2>Donation Details</h2>
+            <form id="donation-form">
+                <div class="form-group">
+                    <label for="foodQuantity">Amount of Food Donated:</label>
+                    <input type="number" id="foodQuantity" name="foodQuantity" required>
+                </div>
 
+                <div class="form-group">
+                    <label for="donationFrequency">Donation Frequency:</label>
+                    <select id="donationFrequency" name="donationFrequency" required>
+                        <option value="monthly">Monthly</option>
+                        <option value="quarterly">Quarterly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script2.js"></script>
 </body>
-
 </html>

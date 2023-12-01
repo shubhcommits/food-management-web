@@ -17,6 +17,15 @@
 
 
     <main>
+        <div class="cta-container">
+            <h2>Do you have any questions?</h2>
+            <p>Contact us today and we'll be happy to answer them.</p>
+            <a href="#" class="contact-button">Contact Us</a>
+        </div>
+
+
+
+        
         <form id="contact-form">
             <div class="form-group">
                 <label for="name">Your Name:</label>
@@ -46,7 +55,12 @@
        
     </main>
 
-    <script src="script.js"></script>
+    <script>
+        const refreshIcon = document.getElementById('refresh-icon');
+refreshIcon.addEventListener('click', () => {
+    window.location.reload();
+});
+    </script>
 </body>
 
 </html>
